@@ -79,7 +79,7 @@ title: Getting Started
   }
 </style>
 
-This page will help you install and build your first React Native app. If you already have React Native installed, you can skip ahead to the [Tutorial](tutorial.md).
+Эта страница поможет вам установить и построить свое первое приложение React Native. Если у вас уже установлен React Native, можете перейти сразу к [Tutorial](tutorial.md).
 
 <div class="toggler">
   <ul role="tablist" >
