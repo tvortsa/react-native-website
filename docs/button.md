@@ -3,7 +3,7 @@ id: button
 title: Button
 ---
 
-A basic button component that should render nicely on any platform. Supports a minimal level of customization.
+Основной компонент кнопки, который должен хорошо отображаться на любой платформе. Supports a minimal level of customization.
 
 <center><img src="/react-native/docs/assets/buttonExample.png"></img></center>
 
