@@ -3,11 +3,11 @@ id: state
 title: State
 ---
 
-There are two types of data that control a component: `props` and `state`. `props` are set by the parent and they are fixed throughout the lifetime of a component. For data that is going to change, we have to use `state`.
+Существует два типа данных, которые управляют компонентом: `props` и `state`. `props` устанавливаются родителем, и остаются фиксированными на протяжении всего жизненного цикла компонента. Для данных, которые будут меняться, используются `state`.
 
-In general, you should initialize `state` in the constructor, and then call `setState` when you want to change it.
+В общем, вы должны инициализировать `state` в конструкторе, и затем вызывать `setState` когда хотите изменить его.
 
-For example, let's say we want to make text that blinks all the time. The text itself gets set once when the blinking component gets created, so the text itself is a `prop`. The "whether the text is currently on or off" changes over time, so that should be kept in `state`.
+Например, скажем мы хотим сделать мигающий текст. Сам текст получает один раз при создании мигающего компонента, поэтому сам текст является `prop`. "включен текст или выключен" изменяется со временем, поэтому его следует хранить в `state`.
 
 ```ReactNativeWebPlayer
 import React, { Component } from 'react';
@@ -18,7 +18,7 @@ class Blink extends Component {
     super(props);
     this.state = { isShowingText: true };
 
-    // Toggle the state every second
+    // Переключаем состояние каждую секунду
     setInterval(() => (
       this.setState(previousState => (
         { isShowingText: !previousState.isShowingText }
@@ -54,8 +54,8 @@ export default class BlinkApp extends Component {
 AppRegistry.registerComponent('AwesomeProject', () => BlinkApp);
 ```
 
-In a real application, you probably won't be setting state with a timer. You might set state when you have new data arrived from the server, or from user input. You can also use a state container like [Redux](https://redux.js.org/) or [Mobx](https://mobx.js.org/) to control your data flow. In that case you would use Redux or Mobx to modify your state rather than calling `setState` directly.
+В реальном приложении вы, вероятно, не будете устанавливать состояние с помощью таймера. Вы можете установить состояние, когда у вас появились новые данные с сервера или с пользовательского ввода. Вы также можете использовать контейнер состояния, например [Redux](https://redux.js.org/) или [Mobx](https://mobx.js.org/) для управления потоком данных. В этом случае вы должны использовать Redux или Mobx для изменения своего состояния, а не вызывать `setState` напрямую.
 
-When setState is called, BlinkApp will re-render its Component. By calling setState within the Timer, the component will re-render every time the Timer ticks.
+Когда setState вызван, BlinkApp будет перерендеривать этот Component. Вызов setState с Timer, компонент будет перерисовываться каждый раз, когда тикает Таймер.
 
-State works the same way as it does in React, so for more details on handling state, you can look at the [React.Component API](https://reactjs.org/docs/react-component.html#setstate). At this point, you might be annoyed that most of our examples so far use boring default black text. To make things more beautiful, you will have to [learn about Style](style.md).
+State работает так же, как и в React, поэтому для получения более подробной информации об управлении состоянием, вы можете посмотреть на [React.Component API](https://reactjs.org/docs/react-component.html#setstate). На данный момент вас может раздражать то, что большинство наших примеров до сих пор используют скучный черный текст по умолчанию. Чтобы сделать вещи более красивыми, вам придется [learn about Style](style.md).
