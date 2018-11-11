@@ -13,7 +13,7 @@ const baseUrl = '/react-native/';
 const repoUrl = 'https://github.com/facebook/react-native';
 const siteConfig = {
   title: 'React Native',
-  tagline: 'A framework for building native apps using React',
+  tagline: 'Фрэймворк для создания нативных приложений, с использованием React',
   url: 'https://facebook.github.io',
   baseUrl,
   projectName: 'react-native',

@@ -3,13 +3,13 @@ id: tutorial
 title: Learn the Basics
 ---
 
-React Native is like React, but it uses native components instead of web components as building blocks. So to understand the basic structure of a React Native app, you need to understand some of the basic React concepts, like JSX, components, `state`, and `props`. If you already know React, you still need to learn some React-Native-specific stuff, like the native components. This tutorial is aimed at all audiences, whether you have React experience or not.
+React Native похож на React, но использует в качестве строительных блоков нативные компоненты вместо web компонентов. Для понимания базовой структуры приложения React Native, вы должны понимать некоторые базовые концепции React, такие как JSX, компоненты, `состояния`, и `props`. Если вы уже знакомы с React, вам все равно нужно изучить некоторые React-Native-specific вещи, такие как native components. Этот туториал расчитан на широкую аудиторию вне зависимости знакомы вы с React или нет.
 
-Let's do this thing.
+Давайте сделаем это.
 
 ## Hello World
 
-In accordance with the ancient traditions of our people, we must first build an app that does nothing except say "Hello world". Here it is:
+В соответствии с древними традициями наших людей мы должны сначала создать приложение, которое ничего не делает, кроме как сказать «Hello world»:
 
 ```ReactNativeWebPlayer
 import React, { Component } from 'react';
@@ -26,15 +26,16 @@ export default class HelloWorldApp extends Component {
 }
 ```
 
-If you are feeling curious, you can play around with sample code directly in the web simulators. You can also paste it into your `App.js` file to create a real app on your local machine.
+Если вам интересно, вы можете поиграть с образцом кода прямо в веб-симуляторах. Вы также можете вставить его в свой файл `App.js`, чтобы создать реальное приложение на вашей локальной машине.
 
-## What's going on here?
+## Что тут происходитe?
 
-Some of the things in here might not look like JavaScript to you. Don't panic. _This is the future_.
+Некоторые из вещей здесь могут не выглядеть для вас как JavaScript. Но без паники. _This is the future_.
 
-First of all, ES2015 (also known as ES6) is a set of improvements to JavaScript that is now part of the official standard, but not yet supported by all browsers, so often it isn't used yet in web development. React Native ships with ES2015 support, so you can use this stuff without worrying about compatibility. `import`, `from`, `class`, and `extends` in the example above are all ES2015 features. If you aren't familiar with ES2015, you can probably pick it up just by reading through sample code like this tutorial has. If you want, [this page](https://babeljs.io/learn-es2015/) has a good overview of ES2015 features.
+Прежде всего, ES2015 (aтакже известный как ES6) это набор расширений JavaScript который теперь является частью официального стандарта, но еще не поддерживается всеми браузерами, поэтому он часто не используется в веб-разработке. React Native имеет встроенную поддержку ES2015.
+`import`, `from`, `class`, и `extends` в примере выше это все возможности ES2015. If you aren't familiar with ES2015, you can probably pick it up just by reading through sample code like this tutorial has. If you want, [this page](https://babeljs.io/learn-es2015/) has a good overview of ES2015 features.
 
-The other unusual thing in this code example is `<View><Text>Hello world!</Text></View>`. This is JSX - a syntax for embedding XML within JavaScript. Many frameworks use a special templating language which lets you embed code inside markup language. In React, this is reversed. JSX lets you write your markup language inside code. It looks like HTML on the web, except instead of web things like `<div>` or `<span>`, you use React components. In this case, `<Text>` is a built-in component that just displays some text and `View` is like the `<div>` or `<span>`.
+Другая необычная вещь в этом примере кода это `<View><Text>Hello world!</Text></View>`. Это синтаксис JSX - для в XML со встроенным JavaScript. Многие фреймворки используют специальный язык шаблонов, который позволяет вставлять код в язык разметки. В React, наоборот. JSX позволяет писать язык разметки внутри кода. Это похоже на HTML для web, но вместо некоторых web вещей типа `<div>` или `<span>`, you используете React компоненты. В данном случае, `<Text>` это встроенный компонент который просто отображает некоторый текст и `View` это что то типа `<div>` или `<span>`.
 
 ## Components
 

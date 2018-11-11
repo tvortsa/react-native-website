@@ -3,46 +3,44 @@
 This repo contains the website configuration and documentation powering the
 [React Native website](https://facebook.github.io/react-native/).
 
-## Getting started
+## Начиная
 
-### Prerequisites
+### Предпосылки
 
 1.  Git
-1.  Node: install version 6.2.2 or greater. Node v8 would be ideal.
-1.  Yarn: See
-    [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/).
-1.  A fork of the repo (for any contributions).
-1.  A clone of the `react-native-website` repo.
-1.  Docusaurus: Run `yarn global add docusaurus-init` or `npm install --global docusaurus-init`
-1.  Prettier: See
+1.  Node: установите версию 6.2.2 или выше. Node v8 должен подойти идеально.
+1.  Yarn: См
+    [Yarn вебсайт с инструкциями по установке](https://yarnpkg.com/lang/en/docs/install/).
+1.  Форкните реппозиторий (если хотите).
+1.  Клонируйте реппозиторий `react-native-website`.
+1.  Docusaurus: запустите `yarn global add docusaurus-init` или `npm install --global docusaurus-init`
+1.  Prettier: См
     [Prettier website for installation instructions](https://prettier.io/docs/en/install.html).
 
-### Installation
+### Установка
 
-1.  `cd react-native-website` to go into the project root.
-1.  `cd website` to go into the website portion of the project.
-1.  `yarn` to install the website's npm dependencies (or `npm install`, if not
-    using Yarn).
+1.  `cd react-native-website` войти в корень проекта.
+1.  `cd website` войти в вебсайт-часть сайта проекта.
+1.  `yarn` для установки зависимостей npm сайта (или `npm install`, если не используется Yarn).
 
-### Running locally
+### Локальный запуск
 
-1.  `yarn start` to start the development server (powered by Docusaurus) (or `npm start`, if not using Yarn).
-1.  `open http://localhost:3000/` to open the site in your favorite browser.
+1.  `yarn start` запустить сервер разработки (основан на Docusaurus) (или `npm install`, если не используется Yarn).
+1.  `откройте http://localhost:3000/` чтобы открыть сайт в браузере.
 
-# Overview
+# Обзор
 
-If you're here because you would like to contribute an edit or addition to the
-docs, you'll probably want to take a look at the 'docs/' directory.
+Если вы здесь, потому что хотите внести изменения или дополнения в docs, 
+вы, вероятно, захотите взглянуть на папку 'docs/'.
 
-To edit the internals of how the site is built, you may want to get familiarized
-with how the site is built. The React Native website is a static site generated
-using [Docusaurus](https://docusaurus.io). The website configuration can be
-found in the 'website/' directory. Visit the Docusaurus website to learn more
-about all the avaible configuration options.
+Чтобы отредактировать внутреннюю часть того, как создается сайт, вы можете ознакомиться с тем,
+как сайт построен. React Native website является статическим сайтом, сгенерированным 
+с помощью [Docusaurus](https://docusaurus.io). Конфигурация сайта находится в папке 'website/'.
+Зайдите на сайт Docusaurus чтобы узнать побольше обо всех доступных опциях.
 
-## Directory Structure
+## Структура папок
 
-The following is a high level overview of relevant files and folders.
+Ниже приведен краткий обзор соответствующих файлов и папок.
 
 ```
 react-native-website/
@@ -79,9 +77,9 @@ react-native-website/
 
 ## Documentation sources
 
-As mentioned above, the 'docs/' folder contains the source files for all of the
-docs in the React Native website. In most cases, you will want to edit the files
-within this directory. If you're adding a new doc or you need to alter the order
+Как упоминалось выше папка 'docs/' содержит файлы исходников всей документации
+на сайте React Native website. В большинстве случаев, вы будете редактировать 
+файлы в этой директории. If you're adding a new doc or you need to alter the order
 the docs appear in the sidebar, take a look at the 'sidebars.json' file in the
 'website/' directory. The sidebars file contains a list of document ids that
 should match those defined in the header metadata (aka frontmatter) of the docs

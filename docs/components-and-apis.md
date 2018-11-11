@@ -3,64 +3,64 @@ id: components-and-apis
 title: Components and APIs
 ---
 
-React Native provides a number of built-in components. You will find a full list of components and APIs on the sidebar to the left. If you're not sure where to get started, take a look at the following categories:
+React Native предоставляет ряд встроенных компонентов. Вы найдете полный список компонентов и API на сайдбаре слева. Если вы не знаете, с чего начать, ознакомьтесь со следующими категориями::
 
-* [Basic Components](components-and-apis.md#basic-components)
-* [User Interface](components-and-apis.md#user-interface)
-* [List Views](components-and-apis.md#list-views)
-* [iOS-specific](components-and-apis.md#ios-components-and-apis)
-* [Android-specific](components-and-apis.md#android-components-and-apis)
-* [Others](components-and-apis.md#others)
+* [Базовые компоненты](components-and-apis.md#basic-components)
+* [Интерфейс пользователя](components-and-apis.md#user-interface)
+* [Списки](components-and-apis.md#list-views)
+* [iOS-специфические](components-and-apis.md#ios-components-and-apis)
+* [Android-специфические](components-and-apis.md#android-components-and-apis)
+* [Другие](components-and-apis.md#others)
 
-You're not limited to the components and APIs bundled with React Native. React Native is a community of thousands of developers. If you're looking for a library that does something specific, search the npm registry for packages mentioning [react-native](https://www.npmjs.com/search?q=react-native&page=1&ranking=optimal), or check out [Awesome React Native](http://www.awesome-react-native.com/) for a curated list.
+Вы не ограничены компонентами и API поставляемыми с React Native. React Native это сообщество тысяч разработчиков. Если вы ищете библиотеку, которая делает что-то конкретное, выполните поиск в реестре npm для упомянутых пакетов [react-native](https://www.npmjs.com/search?q=react-native&page=1&ranking=optimal), или [Awesome React Native](http://www.awesome-react-native.com/) курируемый список.
 
-## Basic Components
+## Базовые компоненты
 
-Most apps will end up using one of these basic components. You'll want to get yourself familiarized with all of these if you're new to React Native.
+Большинство приложений в конечном итоге будут использовать один из этих базовых компонентов. Вы захотите ознакомиться с ними, если вы новичок в React Native.
 
 <div class="component-grid component-grid-border">
   <div class="component">
     <h3><a href="view.html">View</a></h3>
-    <p>The most fundamental component for building a UI.</p>
+    <p>Самый фундаментальный компонент для создания пользовательского интерфейса.</p>
   </div>
   <div class="component">
     <h3><a href="text.html">Text</a></h3>
-    <p>A component for displaying text.</p>
+    <p>Компонент для отображения текста.</p>
   </div>
   <div class="component">
     <h3><a href="image.html">Image</a></h3>
-    <p>A component for displaying images.</p>
+    <p>Компонент для отображения изображений.</p>
   </div>
   <div class="component">
     <h3><a href="textinput.html">TextInput</a></h3>
-    <p>A component for inputting text into the app via a keyboard.</p>
+    <p>Компонент для ввода текста в приложение с помощью клавиатуры.</p>
   </div>
   <div class="component">
     <h3><a href="scrollview.html">ScrollView</a></h3>
-    <p>Provides a scrolling container that can host multiple components and views.</p>
+    <p>Предоставляет прокручивающийся контейнер, в котором могут размещаться несколько компонентов и представлений..</p>
   </div>
   <div class="component">
     <h3><a href="stylesheet.html">StyleSheet</a></h3>
-    <p>Provides an abstraction layer similar to CSS stylesheets.</p>
+    <p>Обеспечивает уровень абстракции, аналогичный стилям CSS.</p>
   </div>
 </div>
 
-## User Interface
+## Пользовательский интерфейс
 
-Render common user interface controls on any platform using the following components. For platform specific components, keep reading.
+Рендер общих элементов управления пользовательского интерфейса на любой платформе, используя следующие компоненты. Для конкретных компонентов платформы продолжайте чтение.
 
 <div class="component-grid component-grid-border">
   <div class="component">
     <h3><a href="button.html">Button</a></h3>
-    <p>A basic button component for handling touches that should render nicely on any platform.</p>
+    <p>Основной компонент кнопки для обработки жестов, который должен хорошо отображаться на любой платформе.</p>
   </div>
   <div class="component">
     <h3><a href="picker.html">Picker</a></h3>
-    <p>Renders the native picker component on iOS and Android.</p>
+    <p>Renders the native picker component на iOS и Android.</p>
   </div>
   <div class="component">
     <h3><a href="slider.html">Slider</a></h3>
-    <p>A component used to select a single value from a range of values.</p>
+    <p>Компонент, используемый для выбора одного значения из диапазона значений.</p>
   </div>
   <div class="component">
     <h3><a href="switch.html">Switch</a></h3>
@@ -70,16 +70,16 @@ Render common user interface controls on any platform using the following compon
 
 ## List Views
 
-Unlike the more generic `ScrollView`, the following list view components only render elements that are currently showing on the screen. This makes them a great choice for displaying long lists of data.
+В отличие от более общего `ScrollView`, этот компонент списка рендерит только те компоненты которые в данный момент отображены на экране. Это делает их отличным выбором для отображения длинных списков данных.
 
 <div class="component-grid component-grid-border">
   <div class="component">
     <h3><a href="flatlist.html">FlatList</a></h3>
-    <p>A component for rendering performant scrollable lists.</p>
+    <p>Компонент для рендеринга прокручиваемых списков.</p>
   </div>
   <div class="component">
     <h3><a href="sectionlist.html">SectionList</a></h3>
-    <p>Like <code>FlatList</code>, but for sectioned lists.</p>
+    <p>Like <code>FlatList</code>, но для секционных списков.</p>
   </div>
 </div>
 
@@ -128,24 +128,24 @@ Many of the following components provide wrappers for commonly used UIKit classe
 
 ## Android Components and APIs
 
-Many of the following components provide wrappers for commonly used Android classes.
+Многие из следующих компонентов предоставляют обертки для обычно используемых классов Android.
 
 <div class="component-grid component-grid-border">
   <div class="component">
     <h3><a href="backhandler.html">BackHandler</a></h3>
-    <p>Detect hardware button presses for back navigation.</p>
+    <p>Обнаружение аппаратных нажатий кнопок для обратной навигации.</p>
   </div>
   <div class="component">
     <h3><a href="datepickerandroid.html">DatePickerAndroid</a></h3>
-    <p>Opens the standard Android date picker dialog.</p>
+    <p>Открывает стандартный Android диалог выбора даты.</p>
   </div>
   <div class="component">
     <h3><a href="drawerlayoutandroid.html">DrawerLayoutAndroid</a></h3>
-    <p>Renders a <code>DrawerLayout</code> on Android.</p>
+    <p>Рендерит андроидовский <code>DrawerLayout</code>.</p>
   </div>
   <div class="component">
     <h3><a href="permissionsandroid.html">PermissionsAndroid</a></h3>
-    <p>Provides access to the permissions model introduced in Android M.</p>
+    <p>Предоставляет доступ к модели разрешений, представленной в Android M.</p>
   </div>
   <div class="component">
     <h3><a href="progressbarandroid.html">ProgressBarAndroid</a></h3>
@@ -165,65 +165,65 @@ Many of the following components provide wrappers for commonly used Android clas
   </div>
   <div class="component">
     <h3><a href="viewpagerandroid.html">ViewPagerAndroid</a></h3>
-    <p>Container that allows to flip left and right between child views.</p>
+    <p>Контейнер, который позволяет перевернуть влево и вправо между дочерними представлениями.</p>
   </div>
 </div>
 
-## Others
+## Другие
 
-These components may come in handy for certain applications. For an exhaustive list of components and APIs, check out the sidebar to the left.
+Эти компоненты могут пригодиться для определенных приложений. Для исчерпывающего списка компонентов и API-интерфейсов проверьте боковую панель слева.
 
 <div class="component-grid">
   <div class="component">
     <h3><a href="activityindicator.html">ActivityIndicator</a></h3>
-    <p>Displays a circular loading indicator.</p>
+    <p>Отображает круговой индикатор загрузки.</p>
   </div>
   <div class="component">
     <h3><a href="alert.html">Alert</a></h3>
-    <p>Launches an alert dialog with the specified title and message.</p>
+    <p>Запускает диалоговое окно предупреждения с указанным заголовком и сообщением</p>
   </div>
   <div class="component">
     <h3><a href="animated.html">Animated</a></h3>
-    <p>A library for creating fluid, powerful animations that are easy to build and maintain.</p>
+    <p>Библиотека для создания жидких, мощных анимаций, которые легко создавать и поддерживать.</p>
   </div>
   <div class="component">
     <h3><a href="cameraroll.html">CameraRoll</a></h3>
-    <p>Provides access to the local camera roll / gallery.</p>
+    <p>Обеспечивает доступ к локальной камере / галерее.</p>
   </div>
   <div class="component">
     <h3><a href="clipboard.html">Clipboard</a></h3>
-    <p>Provides an interface for setting and getting content from the clipboard on both iOS and Android.</p>
+    <p>Предоставляет интерфейс для настройки и получения содержимого из буфера обмена в iOS и Android.</p>
   </div>
   <div class="component">
     <h3><a href="dimensions.html">Dimensions</a></h3>
-    <p>Provides an interface for getting device dimensions.</p>
+    <p>Обеспечивает интерфейс для получения размеров устройства.</p>
   </div>
   <div class="component">
     <h3><a href="keyboardavoidingview.html">KeyboardAvoidingView</a></h3>
-    <p>Provides a view that moves out of the way of the virtual keyboard automatically.</p>
+    <p>Предоставляет представление, которое автоматически перемещается из виртуальной клавиатуры.</p>
   </div>
   <div class="component">
     <h3><a href="linking.html">Linking</a></h3>
-    <p>Provides a general interface to interact with both incoming and outgoing app links.</p>
+    <p>Предоставляет общий интерфейс для взаимодействия с входящими и исходящими ссылками на приложения.</p>
   </div>
   <div class="component">
     <h3><a href="modal.html">Modal</a></h3>
-    <p>Provides a simple way to present content above an enclosing view.</p>
+    <p>Предоставляет простой способ представления содержимого над закрытым представлением.</p>
   </div>
   <div class="component">
     <h3><a href="pixelratio.html">PixelRatio</a></h3>
-    <p>Provides access to the device pixel density.</p>
+    <p>Обеспечивает доступ к плотности пикселей устройства.</p>
   </div>
   <div class="component">
     <h3><a href="refreshcontrol.html">RefreshControl</a></h3>
-    <p>This component is used inside a <code>ScrollView</code> to add pull to refresh functionality.</p>
+    <p>Этот компонент используется внутри <code>ScrollView</code> для добавления функционала обновления.</p>
   </div>
   <div class="component">
     <h3><a href="statusbar.html">StatusBar</a></h3>
-    <p>Component to control the app status bar.</p>
+    <p>Компонент для управления панелью состояния приложения.</p>
   </div>
   <div class="component">
     <h3><a href="webview.html">WebView</a></h3>
-    <p>A component that renders web content in a native view.</p>
+    <p>Компонент, который отображает веб-контент в native view.</p>
   </div>
 </div>
