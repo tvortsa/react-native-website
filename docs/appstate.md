@@ -3,24 +3,24 @@ id: appstate
 title: AppState
 ---
 
-`AppState` can tell you if the app is in the foreground or background, and notify you when the state changes.
+`AppState` может сказать вам, находится ли приложение на переднем плане или в фоновом режиме, и сообщить вам когда состояние изменилось.
 
-AppState is frequently used to determine the intent and proper behavior when handling push notifications.
+AppState часто используется для определения  intent("намерение" - термин и категоря в андроид) и правильное поведение при обработке push-уведомлений.
 
 ### App States
 
-* `active` - The app is running in the foreground
-* `background` - The app is running in the background. The user is either:
-  * in another app
-  * on the home screen
-  * [Android] on another `Activity` (even if it was launched by your app)
-* `inactive` - This is a state that occurs when transitioning between foreground & background, and during periods of inactivity such as entering the Multitasking view or in the event of an incoming call
+* `active` - Приложение работает на переднем плане
+* `background` - Приложение работает в фоновом режиме. Пользователь либо:
+  * в другом приложении
+  * на домашнем экране
+  * [Android] на другом `Activity` (даже если он был запущен вашим приложением)
+* `inactive` - Это состояние, которое возникает при переходе между фоном и фоном, а также во время периодов бездействия, таких как ввод многозадачного представления или в случае входящего вызова
 
 For more information, see [Apple's documentation](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/TheAppLifeCycle/TheAppLifeCycle.html)
 
 ### Basic Usage
 
-To see the current state, you can check `AppState.currentState`, which will be kept up-to-date. However, `currentState` will be null at launch while `AppState` retrieves it over the bridge.
+Чтобы увидеть текущее состояние, вы можете проверить `AppState.currentState`, который будет постоянно обновляться. However, `currentState` при запуске будет пустым `AppState` извлекает его через мост.
 
 ```
 import React, {Component} from 'react'
